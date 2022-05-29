@@ -104,7 +104,7 @@ async def run(ctx):
     for member in guild.members:
       # Filter out excluded roles
       memberRoles = list(filter(lambda r: r.name not in uncredited_roles, member.roles))
-      if len(memberRoles) > 0 and int(member.id) not in uncredited_users:
+      if len(memberRoles) > 0 and member.id not in uncredited_users:
         # If roles remain, must be credited
         profile = None
         profileIndex = None
