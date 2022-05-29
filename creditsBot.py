@@ -9,6 +9,7 @@ intents.members = True
 bot = commands.Bot(command_prefix='>', intents=intents)
 token = ''
 valid_users = []
+uncredited_users = []
 uncredited_roles = []
 top_roles = []
 with open('token.txt', 'r') as f:
